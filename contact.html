@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://use.fontawesome.com/6eb8c784d4.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>Kontakt</title>
 </head>
 <body>
-    <h1>Uzupełnij dane</h1>
-    <form>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Quiz</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Kontakt</a>
+        </li>
+    </ul>
+    <div class="container">
+        <div class="row">
+          <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+            <h1>Uzupełnij dane</h1>
+        <form>
         <div class="form-group">
           <label for="imie">Imię</label>
           <input type="text" class="form-control" id="imie" placeholder="Wpisz swoje imię">
@@ -28,12 +43,27 @@
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Opis</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div> 
+        </div>
         <div>
             <label for="wiek">Wiek</label><br>
             <input type="number" min="1" max="100">
         </div>
-        
-      </form>
+        <div class="form-group">
+            <label for="maritalStatus">Stan cywilny:</label>
+            <select id="maritalStatus">
+                <option selected>Wybierz...</option>
+                <option>Panna/Kawaler</option>
+                <option>Mężatka/Żonaty</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Wyślij</button>
+        <button type="reset" class="btn btn-secondary">Wyczyść</button>
+    </form>
+    </div>
+    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+        <h3>Szybki kontakt</h3>
+        <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+    </div>
 </body>
 </html>
