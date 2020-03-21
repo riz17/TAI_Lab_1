@@ -5,3 +5,9 @@ body {
  li {
      display: inline;
  }
+
+ .stopka {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
