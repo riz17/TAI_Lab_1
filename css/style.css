@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: lightblue;
   }
@@ -7,7 +11,14 @@ body {
  }
 
  .stopka {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
+     position: fixed;
+     text-align: center;
+     bottom: 30px;
  }
+
+ .scroll {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
